@@ -59,8 +59,3 @@ Users can search for products such as:
 
 The search functionality is designed to take the user to the relevant product/category.
 
-## 📸 Website Screenshots
-
-### 🏠 Home Page
-
-![Amazon Clone Home Page](screenshots/home_page.png)
