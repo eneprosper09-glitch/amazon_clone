@@ -58,6 +58,4 @@ Users can search for products such as:
 - Beauty products
 
 The search functionality is designed to take the user to the relevant product/category.
-🏠 Homepage
 
-![Homepage](screenshots/com.png)
