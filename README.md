@@ -58,7 +58,9 @@ Users can search for products such as:
 - Beauty products
 
 The search functionality is designed to take the user to the relevant product/category.
+
 SCREENSHOTS
+
 Sign in
 <img width="1440" height="900" alt="loginsc" src="https://github.com/user-attachments/assets/283167b6-c944-476a-aa7a-1617fdc944d6" />
 Wishlist
