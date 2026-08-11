@@ -1,0 +1,205 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Checkout | Amazon Clone</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="navbar">
+
+        <!-- Logo -->
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- Search -->
+
+        <div class="search">
+
+            <select>
+                <option>All</option>
+            </select>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+            >
+
+            <button
+                type="button"
+                id="searchBtn"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Wishlist -->
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+                Wishlist
+                (<span id="wishlist-count">0</span>)
+            </h4>
+
+        </a>
+
+
+        <!-- Cart -->
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+                Cart
+                (<span id="cart-count">0</span>)
+            </h4>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= CHECKOUT ================= -->
+
+<main class="checkout-page">
+
+    <h1>Checkout</h1>
+
+
+    <div class="checkout-container">
+
+
+        <!-- ================= SHIPPING ================= -->
+
+        <div class="shipping-form">
+
+            <h2>Shipping Address</h2>
+
+            <form id="checkoutForm">
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder="Street Address"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder="City"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder="State"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="place-order-btn"
+                >
+
+                    Place Order
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+       <!-- Order Summary -->
+
+<div class="order-summary">
+
+    <h2>Order Summary</h2>
+
+    <div id="checkoutItems"></div>
+
+    <hr>
+
+    <h3 id="checkoutTotal">₦0</h3>
+
+</div>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

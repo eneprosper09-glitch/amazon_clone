@@ -1,0 +1,207 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Blender | Amazon Clone</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="navbar">
+
+        <!-- Logo -->
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- Search -->
+
+        <div class="search">
+
+            <select>
+                <option>All</option>
+            </select>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+            >
+
+            <button
+                type="button"
+                id="searchBtn"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Wishlist -->
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>Wishlist</h4>
+
+        </a>
+
+
+        <!-- Cart -->
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+                Cart
+                (<span id="cart-count">0</span>)
+            </h4>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= PRODUCT ================= -->
+
+<main class="product-page">
+
+
+    <!-- Product Image -->
+
+    <div class="product-image">
+
+        <img
+            src="images/project4.png"
+            alt="High-Speed Kitchen Blender"
+        >
+
+    </div>
+
+
+    <!-- Product Details -->
+
+    <div
+        class="product-details"
+        data-name="Blender"
+        data-price="99999"
+        data-image="images/project4.png"
+    >
+
+        <h1>
+            High-Speed Kitchen Blender
+        </h1>
+
+
+        <div class="rating">
+
+            ★★★★★
+
+            <span>
+                (540 Reviews)
+            </span>
+
+        </div>
+
+
+        <p class="price">
+            ₦99,999
+        </p>
+
+
+        <p class="stock">
+            In Stock
+        </p>
+
+
+        <p class="description">
+
+            Powerful blender with multiple speed
+            settings, stainless steel blades, and a
+            large-capacity jar. Perfect for smoothies,
+            soups, and food preparation.
+
+        </p>
+
+
+        <!-- Add To Cart -->
+
+        <button
+            id="addToCart"
+            class="cart-btn"
+            type="button"
+        >
+
+            Add to Cart
+
+        </button>
+
+
+        <!-- Buy Now -->
+
+       <button
+    id="buyNow"
+    class="buy-btn"
+    type="button"
+>
+    Buy Now
+</button>
+
+    </div>
+
+</main>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

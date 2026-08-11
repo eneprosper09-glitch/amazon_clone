@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1500 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D0D14"/>
+      <stop offset="60%" stop-color="#151A2B"/>
+      <stop offset="100%" stop-color="#1E2745"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E0C6"/>
+      <stop offset="100%" stop-color="#4CC9FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1500" height="600" fill="url(#bg2)"/>
+
+  <!-- circuit-like grid lines -->
+  <g stroke="#2C3A5E" stroke-width="2" opacity="0.6">
+    <line x1="0" y1="480" x2="1500" y2="480"/>
+    <line x1="200" y1="480" x2="200" y2="400"/>
+    <line x1="200" y1="400" x2="340" y2="400"/>
+    <line x1="700" y1="480" x2="700" y2="420"/>
+    <line x1="700" y1="420" x2="820" y2="420"/>
+    <line x1="1100" y1="480" x2="1100" y2="410"/>
+  </g>
+  <circle cx="340" cy="400" r="5" fill="#4CC9FF"/>
+  <circle cx="820" cy="420" r="5" fill="#00E0C6"/>
+
+  <text x="90" y="230" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4" fill="#4CC9FF">TECH WEEK</text>
+  <text x="90" y="310" font-family="Georgia, 'Times New Roman', serif" font-size="80" font-weight="700" fill="#FFFFFF">Electronics</text>
+  <text x="90" y="365" font-family="Georgia, 'Times New Roman', serif" font-size="80" font-weight="700" fill="url(#accent2)">Up to 50% off</text>
+  <text x="90" y="410" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#9FB3D9">Headphones · Laptops · Smart home</text>
+
+  <g transform="translate(90,450)">
+    <rect width="220" height="60" rx="30" fill="url(#accent2)"/>
+    <text x="110" y="38" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#0D0D14" text-anchor="middle">Explore deals</text>
+  </g>
+
+  <!-- laptop silhouette -->
+  <g transform="translate(1000,150)">
+    <rect x="0" y="0" width="320" height="200" rx="14" fill="#1B2340" stroke="#3A4A78" stroke-width="3"/>
+    <rect x="18" y="18" width="284" height="164" rx="4" fill="#0D0D14"/>
+    <rect x="40" y="40" width="120" height="10" rx="5" fill="#4CC9FF" opacity="0.8"/>
+    <rect x="40" y="62" width="200" height="10" rx="5" fill="#2C3A5E"/>
+    <rect x="40" y="84" width="160" height="10" rx="5" fill="#2C3A5E"/>
+    <path d="M -30 220 L 350 220 L 380 250 L -60 250 Z" fill="#101528"/>
+  </g>
+
+  <!-- earbuds -->
+  <g transform="translate(760,340)">
+    <circle cx="0" cy="0" r="34" fill="#0D0D14" stroke="#3A4A78" stroke-width="3"/>
+    <circle cx="0" cy="0" r="10" fill="#00E0C6"/>
+    <circle cx="100" cy="30" r="34" fill="#0D0D14" stroke="#3A4A78" stroke-width="3"/>
+    <circle cx="100" cy="30" r="10" fill="#4CC9FF"/>
+  </g>
+</svg>

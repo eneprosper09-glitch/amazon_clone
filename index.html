@@ -1,0 +1,1081 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="navbar">
+
+
+    <!-- LOGO -->
+
+    <div class="nav-logo">
+
+        <a href="index.html">
+
+            <img
+                src="images/logo.jpg"
+                alt="Amazon Clone Logo"
+            >
+
+        </a>
+
+    </div>
+
+
+    <!-- LOCATION -->
+
+    <a
+        href="delivery.html"
+        class="nav-location"
+    >
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <div>
+
+            <small>Deliver to</small>
+
+            <h5>Nigeria</h5>
+
+        </div>
+
+    </a>
+
+
+    <!-- SEARCH -->
+
+    <div class="search">
+
+        <select
+            id="searchCategory"
+            aria-label="Search category"
+        >
+
+            <option value="all">
+                All
+            </option>
+
+            <option value="electronics">
+                Electronics
+            </option>
+
+            <option value="fashion">
+                Fashion
+            </option>
+
+            <option value="home">
+                Home
+            </option>
+
+            <option value="gaming">
+                Gaming
+            </option>
+
+        </select>
+
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Amazon"
+            autocomplete="off"
+        >
+
+
+        <button
+            type="button"
+            id="searchBtn"
+            aria-label="Search"
+        >
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- LANGUAGE -->
+
+    <div class="language">
+
+        <img
+            src="images/flag.png"
+            alt="Nigeria"
+        >
+
+        <span>EN</span>
+
+    </div>
+
+
+    <!-- ACCOUNT -->
+
+    <a
+        href="account.html"
+        class="account"
+    >
+
+        <small>
+            Hello, Sign in
+        </small>
+
+        <h5>
+            Account &amp; Lists
+        </h5>
+
+    </a>
+
+
+    <!-- RETURNS & ORDERS -->
+
+    <a
+        href="orders.html"
+        class="returns"
+    >
+
+        <small>
+            Returns
+        </small>
+
+        <h5>
+            &amp; Orders
+        </h5>
+
+    </a>
+
+
+    <!-- WISHLIST -->
+
+    <a
+        href="wishlist.html"
+        class="wishlist-link"
+    >
+
+        <i class="fa-solid fa-heart"></i>
+
+        <h4>
+            Wishlist
+            (<span id="wishlist-count">0</span>)
+        </h4>
+
+    </a>
+
+
+    <!-- CART -->
+
+    <a
+        href="cart.html"
+        class="cart"
+    >
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <h4>
+            Cart
+            (<span id="cart-count">0</span>)
+        </h4>
+
+    </a>
+
+
+</header>
+
+
+
+    <!-- ================= SECOND NAV ================= -->
+
+<nav>
+
+    <ul>
+
+        <li>
+            <a href="categories.html">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </a>
+        </li>
+
+
+        <li>
+            <a href="deals.html">
+                Today's Deals
+            </a>
+        </li>
+
+
+        <li>
+            <a href="customer-service.html">
+                Customer Service
+            </a>
+        </li>
+
+
+        <li>
+            <a href="registry.html">
+                Registry
+            </a>
+        </li>
+
+
+        <li>
+            <a href="gift-cards.html">
+                Gift Cards
+            </a>
+        </li>
+
+
+        <li>
+            <a href="sell.html">
+                Sell
+            </a>
+        </li>
+
+    </ul>
+
+
+    <div>
+        Shop Deals in Electronics
+    </div>
+
+</nav>
+<!-- ALL MENU -->
+
+<div class="all-menu" id="allMenu">
+
+    <div class="all-menu-header">
+
+        <i class="fa-solid fa-user"></i>
+
+        <strong>
+            Hello, Sign in
+        </strong>
+
+    </div>
+
+
+    <div class="all-menu-content">
+
+        <h3>
+            Shop By Category
+        </h3>
+
+        <a href="#electronics">
+            Electronics
+        </a>
+
+        <a href="#gaming">
+            Gaming
+        </a>
+
+        <a href="#fashion">
+            Fashion
+        </a>
+
+        <a href="#home">
+            Home Essentials
+        </a>
+
+        <a href="#beauty">
+            Beauty
+        </a>
+
+        <a href="#kitchen">
+            Kitchen
+        </a>
+
+
+        <h3>
+            Help & Settings
+        </h3>
+
+        <a href="account.html">
+            Your Account
+        </a>
+
+        <a href="customer-service.html">
+            Customer Service
+        </a>
+
+        <a href="contact-us.html">
+            Contact Us
+        </a>
+
+    </div>
+
+</div>
+<!-- ================= HERO SLIDER ================= -->
+
+<section class="hero">
+
+    <div class="slides">
+
+        <img src="images/hero1.svg" class="slide active" alt="Slide 1">
+
+        <img src="images/hero2.svg" class="slide" alt="Slide 2">
+
+        <img src="images/hero-03-fashion.svg" class="slide" alt="Slide 3">
+
+    </div>
+
+    <button class="slider-btn prev">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <button class="slider-btn next">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+</section>
+
+
+
+<!-- ================= PRODUCT GRID ================= -->
+<section class="products">
+
+    <!-- Gaming Accessories -->
+    <div class="card" data-name="gaming accessories mouse monitor gaming chair">
+
+        <h2>Gaming Accessories</h2>
+
+        <div class="image large">
+            <img src="images/gaming.png" alt="Gaming Accessories">
+        </div>
+
+        <div class="small-images">
+
+            <div class="small-card">
+                <img src="images/mouse.png" alt="Mouse">
+                <p>Mouse</p>
+            </div>
+
+            <div class="small-card">
+                <img src="images/monitor.png" alt="Monitor">
+                <p>Monitor</p>
+            </div>
+
+            <div class="small-card">
+                <img src="images/chair.png" alt="Gaming Chair">
+                <p>Gaming Chair</p>
+            </div>
+
+        </div>
+
+        <a href="gaming.html">See More</a>
+
+    </div>
+
+    <!-- Fashion -->
+    <div class="card" data-name="fashion sweater bag glasses clothing">
+
+        <h2>Shop Fashion</h2>
+
+        <div class="image large">
+            <img src="images/fashion.png" alt="Fashion">
+        </div>
+
+        <div class="small-images">
+
+            <div class="small-card">
+                <img src="images/sweater.png" alt="Sweater">
+                <p>Sweater</p>
+            </div>
+
+            <div class="small-card">
+                <img src="images/bag.png" alt="Bag">
+                <p>Bag</p>
+            </div>
+
+            <div class="small-card">
+                <img src="images/glasses.png" alt="Glasses">
+                <p>Glasses</p>
+            </div>
+
+        </div>
+
+        <a href="fashion.html">See More</a>
+
+    </div>
+
+    <!-- Electronics -->
+    <div class="card" data-name="electronics phone samsung powerbank smartwatch iwatch s24 ultra">
+
+        <h2>Electronics</h2>
+
+        <div class="image large">
+            <img src="images/elec.png" alt="Electronics">
+        </div>
+
+        <div class="small-images">
+
+            <div class="small-card">
+                <img src="images/Powerbank.png" alt="Power Bank">
+                <p>Power Bank</p>
+            </div>
+
+            <div class="small-card">
+                <img src="images/S24ultra.png" alt="Samsung S24 Ultra">
+                <p>S24 Ultra</p>
+            </div>
+
+            <div class="small-card">
+                <img src="images/I watch.png" alt="Smart Watch">
+                <p>iWatch</p>
+            </div>
+
+        </div>
+
+        <a href="electronics.html">See More</a>
+
+    </div>
+
+    <!-- Home Essentials -->
+    <div class="card" data-name="home essentials kitchen knife trays pot set cookware">
+
+        <h2>Home Essentials</h2>
+
+        <div class="image large">
+            <img src="images/homeessentials.png" alt="Home Essentials">
+        </div>
+
+        <div class="small-images">
+
+            <div class="small-card">
+                <img src="images/knive.png" alt="Knife">
+                <p>Knife</p>
+            </div>
+
+            <div class="small-card">
+                <img src="images/kinve2.png" alt="Trays">
+                <p>Trays</p>
+            </div>
+
+            <div class="small-card">
+                <img src="images/knive3.png" alt="Pot Set">
+                <p>Pot Set</p>
+            </div>
+
+        </div>
+
+        <a href="home-essentials.html">See More</a>
+
+    </div>
+
+</section>
+<!-- ================= CAROUSEL ================= -->
+<section class="carousel-section">
+
+    <h2>Best Sellers in Electronics</h2>
+
+    <div class="carousel">
+
+        <!-- Left Button -->
+        <button
+            class="carousel-btn carousel-prev"
+            type="button">
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+
+        <!-- Products -->
+        <div class="items">
+
+
+            <!-- ================= AIRPODS ================= -->
+
+            <a href="airpods.html" class="product-link">
+
+                <div
+                    class="item"
+                    data-name="Apple AirPods Pro"
+                    data-price="189999"
+                    data-image="images/product1.png">
+
+                    <button
+                        class="wishlist-btn"
+                        type="button"
+                        aria-label="Add Apple AirPods Pro to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="images/product1.png"
+                        alt="Apple AirPods Pro">
+
+                    <h4>Apple AirPods Pro</h4>
+
+                    <p class="price">₦189,999</p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- ================= SONY HEADPHONES ================= -->
+
+            <a href="sony-headphones.html" class="product-link">
+
+                <div
+                    class="item"
+                    data-name="Sony Headphones"
+                    data-price="240999"
+                    data-image="images/project2.png">
+
+                    <button
+                        class="wishlist-btn"
+                        type="button"
+                        aria-label="Add Sony Headphones to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="images/project2.png"
+                        alt="Sony Headphones">
+
+                    <h4>Sony Headphones</h4>
+
+                    <p class="price">₦240,999</p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- ================= EXTENSION CABLE ================= -->
+
+            <a href="extension-cable.html" class="product-link">
+
+                <div
+                    class="item"
+                    data-name="Extension Cable"
+                    data-price="22880"
+                    data-image="images/project3.png">
+
+                    <button
+                        class="wishlist-btn"
+                        type="button"
+                        aria-label="Add Extension Cable to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="images/project3.png"
+                        alt="Extension Cable">
+
+                    <h4>Extension Cable</h4>
+
+                    <p class="price">₦22,880</p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- ================= BLENDER ================= -->
+
+<a href="blender.html" class="product-link">
+
+    <div
+        class="item"
+        data-name="Blender"
+        data-price="99999"
+        data-image="images/project4.png"
+    >
+
+        <button
+            type="button"
+            class="wishlist-btn"
+            aria-label="Add Blender to wishlist"
+        >
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <img
+            src="images/project4.png"
+            alt="Blender"
+        >
+
+        <span class="deal-badge">
+            Limited Time Deal
+        </span>
+
+        <h4>Blender</h4>
+
+        <p class="price">₦99,999</p>
+
+        <div class="rating">
+            ★★★★★
+        </div>
+
+    </div>
+
+</a>
+
+
+            <!-- ================= FRIDGE ================= -->
+
+            <a href="fridge.html" class="product-link">
+
+                <div
+                    class="item"
+                    data-name="Fridge"
+                    data-price="325999"
+                    data-image="images/project5.png">
+
+                    <button
+                        class="wishlist-btn"
+                        type="button"
+                        aria-label="Add Fridge to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="images/project5.png"
+                        alt="Fridge">
+
+                    <h4>Fridge</h4>
+
+                    <p class="price">₦325,999</p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- ================= SHIRTS ================= -->
+
+            <a href="shirts.html" class="product-link">
+
+                <div
+                    class="item"
+                    data-name="Shirts"
+                    data-price="38000"
+                    data-image="images/project6.png">
+
+                    <button
+                        class="wishlist-btn"
+                        type="button"
+                        aria-label="Add Shirts to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="images/project6.png"
+                        alt="Shirts">
+
+                    <h4>Shirts</h4>
+
+                    <p class="price">₦38,000</p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- ================= LOAFERS ================= -->
+
+            <a href="loafers.html" class="product-link">
+
+                <div
+                    class="item"
+                    data-name="Loafers"
+                    data-price="88999"
+                    data-image="images/project7.png">
+
+                    <button
+                        class="wishlist-btn"
+                        type="button"
+                        aria-label="Add Loafers to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="images/project7.png"
+                        alt="Loafers">
+
+                    <h4>Loafers</h4>
+
+                    <p class="price">₦88,999</p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- ================= SNEAKERS ================= -->
+
+            <a href="sneakers.html" class="product-link">
+
+                <div
+                    class="item"
+                    data-name="Sneakers"
+                    data-price="48000"
+                    data-image="images/project8.png">
+
+                    <button
+                        class="wishlist-btn"
+                        type="button"
+                        aria-label="Add Sneakers to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <img
+                        src="images/project8.png"
+                        alt="Sneakers">
+
+                    <h4>Sneakers</h4>
+
+                    <p class="price">₦48,000</p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Right Button -->
+        <button
+            class="carousel-btn carousel-next"
+            type="button">
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+    </div>
+
+</section>
+<!-- ================= SECOND GRID ================= -->
+
+<!-- Beauty Picks -->
+<div class="card">
+
+    <h2>Beauty Picks</h2>
+
+    <div class="image large">
+        <img src="images/beauty.png" alt="Beauty Picks">
+    </div>
+
+    <div class="small-images">
+
+        <div class="small-card">
+            <img src="images/be1.png" alt="Lipstick">
+            <p>Lipstick</p>
+        </div>
+
+        <div class="small-card">
+            <img src="images/be2.png" alt="Perfume">
+            <p>Perfume</p>
+        </div>
+
+        <div class="small-card">
+            <img src="images/be3.png" alt="Skincare">
+            <p>Skincare</p>
+        </div>
+
+    </div>
+
+    <a href="beauty-deals.html">
+        Shop Now
+    </a>
+
+</div>
+
+
+<!-- Kitchen Must-Haves -->
+<div class="card">
+
+    <h2>Kitchen Must-Haves</h2>
+
+    <div class="image large">
+        <img src="images/kit.png" alt="Kitchen">
+    </div>
+
+    <div class="small-images">
+
+        <div class="small-card">
+            <img src="images/kit1.png" alt="Cookware">
+            <p>Cookware</p>
+        </div>
+
+        <div class="small-card">
+            <img src="images/kit2.png" alt="Kettle">
+            <p>Kettle</p>
+        </div>
+
+        <div class="small-card">
+            <img src="images/kit3.png" alt="Toaster">
+            <p>Toaster</p>
+        </div>
+
+    </div>
+
+    <a href="kitchen.html">
+        Shop Now
+    </a>
+
+</div>
+
+
+<!-- Computers -->
+<div class="card">
+
+    <h2>Computers</h2>
+
+    <div class="image large">
+        <img src="images/com.png" alt="Computers">
+    </div>
+
+    <div class="small-images">
+
+        <div class="small-card">
+            <img src="images/com1.png" alt="Laptop">
+            <p>Laptop</p>
+        </div>
+
+        <div class="small-card">
+            <img src="images/com2.png" alt="Keyboard">
+            <p>Keyboard</p>
+        </div>
+
+        <div class="small-card">
+            <img src="images/com3.png" alt="Router">
+            <p>Router</p>
+        </div>
+
+    </div>
+
+    <a href="computers.html">
+        Shop Now
+    </a>
+
+</div>
+
+
+<!-- Top Deals -->
+<div class="card">
+
+    <h2>Top Deals</h2>
+
+    <div class="image large">
+        <img src="images/top.png" alt="Top Deals">
+    </div>
+
+    <div class="small-images">
+
+        <div class="small-card">
+            <img src="images/top1.png" alt="Loafers">
+            <p>Loafers</p>
+        </div>
+
+        <div class="small-card">
+            <img src="images/top2.png" alt="Loafers">
+            <p>Loafers</p>
+        </div>
+
+        <div class="small-card">
+            <img src="images/top3.png" alt="Slippers">
+            <p>Slippers</p>
+        </div>
+
+    </div>
+
+    <a href="top-deals.html">
+        Shop Now
+    </a>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<div class="back" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    Back to Top
+</div>
+
+
+<div class="footer-content">
+
+
+    <!-- GET TO KNOW US -->
+
+    <div class="footer-column">
+
+        <h3>Get to Know Us</h3>
+
+        <a href="careers.html">
+            Careers
+        </a>
+
+        <a href="about.html">
+            About Amazon
+        </a>
+
+        <a href="investor-relations.html">
+            Investor Relations
+        </a>
+
+        <a href="devices.html">
+            Devices
+        </a>
+
+    </div>
+
+
+    <!-- MAKE MONEY WITH US -->
+
+    <div class="footer-column">
+
+        <h3>Make Money with Us</h3>
+
+        <a href="sell.html">
+            Sell Products
+        </a>
+
+        <a href="affiliate.html">
+            Affiliate Program
+        </a>
+
+        <a href="advertise.html">
+            Advertise
+        </a>
+
+        <a href="self-publish.html">
+            Self Publish
+        </a>
+
+    </div>
+
+
+    <!-- PAYMENT PRODUCTS -->
+
+    <div class="footer-column">
+
+        <h3>Payment Products</h3>
+
+        <a href="business-card.html">
+            Business Card
+        </a>
+
+        <a href="reload-balance.html">
+            Reload Balance
+        </a>
+
+        <a href="currency-converter.html">
+            Currency Converter
+        </a>
+
+    </div>
+
+
+    <!-- LET US HELP YOU -->
+
+    <div class="footer-column">
+
+        <h3>Let Us Help You</h3>
+
+        <a href="account.html">
+            Your Account
+        </a>
+
+        <a href="shipping.html">
+            Shipping Rates
+        </a>
+
+        <a href="orders.html">
+            Returns
+        </a>
+
+        <a href="customer-service.html">
+            Help
+        </a>
+
+    </div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+    <a href="index.html">
+
+        <img
+            src="images/logo.jpg"
+            alt="Amazon Logo"
+        >
+
+    </a>
+
+    <p>
+        &copy; 2026 Amazon Clone.
+        All Rights Reserved.
+    </p>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

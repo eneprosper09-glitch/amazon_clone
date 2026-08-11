@@ -1,0 +1,497 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Advertise | Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <div class="navbar">
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <a
+            href="delivery.html"
+            class="nav-location"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <small>Deliver to</small>
+
+                <h5>Nigeria</h5>
+
+            </div>
+
+        </a>
+
+
+        <div class="search">
+
+            <select>
+
+                <option>All</option>
+
+            </select>
+
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+            >
+
+
+            <button
+                type="button"
+                id="searchBtn"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="language">
+
+            <img
+                src="images/flag.png"
+                alt="English"
+            >
+
+            <span>EN</span>
+
+        </div>
+
+
+        <a
+            href="account.html"
+            class="account"
+        >
+
+            <small>Hello, Sign in</small>
+
+            <h5>Account &amp; Lists</h5>
+
+        </a>
+
+
+        <a
+            href="orders.html"
+            class="returns"
+        >
+
+            <small>Returns</small>
+
+            <h5>&amp; Orders</h5>
+
+        </a>
+
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+                Wishlist
+                (<span id="wishlist-count">0</span>)
+            </h4>
+
+        </a>
+
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+                Cart
+                (<span id="cart-count">0</span>)
+            </h4>
+
+        </a>
+
+    </div>
+
+
+    <!-- ADVERTISE PAGE -->
+
+    <main class="advertise-page">
+
+
+        <section class="advertise-hero">
+
+            <h1>
+                Advertise With Us
+            </h1>
+
+            <p>
+                Promote your products and reach
+                customers through our online
+                shopping platform.
+            </p>
+
+        </section>
+
+
+        <section class="advertise-grid">
+
+
+            <div class="advertise-card">
+
+                <i class="fa-solid fa-bullhorn"></i>
+
+                <h2>
+                    Promote Your Products
+                </h2>
+
+                <p>
+                    Put your products in front of
+                    customers who are looking for
+                    products like yours.
+                </p>
+
+            </div>
+
+
+            <div class="advertise-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h2>
+                    Reach Customers
+                </h2>
+
+                <p>
+                    Connect your brand with shoppers
+                    and introduce them to your
+                    products.
+                </p>
+
+            </div>
+
+
+            <div class="advertise-card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h2>
+                    Track Results
+                </h2>
+
+                <p>
+                    Monitor advertising performance
+                    and understand how customers
+                    interact with your campaigns.
+                </p>
+
+            </div>
+
+
+            <div class="advertise-card">
+
+                <i class="fa-solid fa-store"></i>
+
+                <h2>
+                    Grow Your Brand
+                </h2>
+
+                <p>
+                    Use advertising to increase
+                    awareness and help your business
+                    reach more shoppers.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ADVERTISING FORM -->
+
+        <section class="advertise-form-box">
+
+            <h2>
+                Advertising Inquiry
+            </h2>
+
+            <p>
+                Tell us about your advertising needs
+                and we'll get back to you.
+            </p>
+
+
+            <form id="advertiseForm">
+
+
+                <label for="advertiserName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="advertiserName"
+                    required
+                >
+
+
+                <label for="advertiserEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="advertiserEmail"
+                    required
+                >
+
+
+                <label for="businessName">
+                    Business Name
+                </label>
+
+                <input
+                    type="text"
+                    id="businessName"
+                    required
+                >
+
+
+                <label for="advertisingType">
+                    Advertising Type
+                </label>
+
+                <select
+                    id="advertisingType"
+                    required
+                >
+
+                    <option value="">
+                        Select advertising type
+                    </option>
+
+                    <option value="Product Promotion">
+                        Product Promotion
+                    </option>
+
+                    <option value="Brand Awareness">
+                        Brand Awareness
+                    </option>
+
+                    <option value="Sponsored Listing">
+                        Sponsored Listing
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <label for="advertisingMessage">
+                    Tell Us About Your Campaign
+                </label>
+
+                <textarea
+                    id="advertisingMessage"
+                    rows="5"
+                    required
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="advertise-btn"
+                >
+                    Submit Inquiry
+                </button>
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div
+            class="back"
+            onclick="window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });"
+        >
+            Back to Top
+        </div>
+
+
+        <div class="footer-content">
+
+
+            <div class="footer-column">
+
+                <h3>Get to Know Us</h3>
+
+                <a href="careers.html">
+                    Careers
+                </a>
+
+                <a href="about.html">
+                    About Amazon
+                </a>
+
+                <a href="investor-relations.html">
+                    Investor Relations
+                </a>
+
+                <a href="devices.html">
+                    Devices
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Make Money with Us</h3>
+
+                <a href="sell.html">
+                    Sell Products
+                </a>
+
+                <a href="affiliate.html">
+                    Affiliate Program
+                </a>
+
+                <a href="advertise.html">
+                    Advertise
+                </a>
+
+                <a href="self-publish.html">
+                    Self Publish
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Payment Products</h3>
+
+                <a href="business-card.html">
+                    Business Card
+                </a>
+
+                <a href="reload-balance.html">
+                    Reload Balance
+                </a>
+
+                <a href="currency-converter.html">
+                    Currency Converter
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Let Us Help You</h3>
+
+                <a href="account.html">
+                    Your Account
+                </a>
+
+                <a href="shipping.html">
+                    Shipping Rates
+                </a>
+
+                <a href="orders.html">
+                    Returns
+                </a>
+
+                <a href="customer-service.html">
+                    Help
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+            <p>
+                &copy; 2026 Amazon Clone.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

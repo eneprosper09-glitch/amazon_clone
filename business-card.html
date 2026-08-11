@@ -1,0 +1,337 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Business Card | Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <div class="navbar">
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <a
+            href="delivery.html"
+            class="nav-location"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <small>Deliver to</small>
+
+                <h5>Nigeria</h5>
+
+            </div>
+
+        </a>
+
+
+        <div class="search">
+
+            <select>
+
+                <option>All</option>
+
+            </select>
+
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+            >
+
+
+            <button
+                type="button"
+                id="searchBtn"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="language">
+
+            <img
+                src="images/flag.png"
+                alt="English"
+            >
+
+            <span>EN</span>
+
+        </div>
+
+
+        <a
+            href="account.html"
+            class="account"
+        >
+
+            <small>Hello, Sign in</small>
+
+            <h5>Account &amp; Lists</h5>
+
+        </a>
+
+
+        <a
+            href="orders.html"
+            class="returns"
+        >
+
+            <small>Returns</small>
+
+            <h5>&amp; Orders</h5>
+
+        </a>
+
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+                Wishlist
+                (<span id="wishlist-count">0</span>)
+            </h4>
+
+        </a>
+
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+                Cart
+                (<span id="cart-count">0</span>)
+            </h4>
+
+        </a>
+
+    </div>
+
+
+    <!-- BUSINESS CARD PAGE -->
+
+    <main class="business-card-page">
+
+
+        <section class="business-card-hero">
+
+            <h1>
+                Business Card
+            </h1>
+
+            <p>
+                Manage your business purchases
+                and keep your business spending
+                organized.
+            </p>
+
+        </section>
+
+
+        <section class="business-card-grid">
+
+
+            <div class="business-card-info">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <h2>
+                    Business Spending
+                </h2>
+
+                <p>
+                    Keep business purchases separate
+                    from personal shopping and make
+                    it easier to manage expenses.
+                </p>
+
+            </div>
+
+
+            <div class="business-card-info">
+
+                <i class="fa-solid fa-chart-pie"></i>
+
+                <h2>
+                    Track Expenses
+                </h2>
+
+                <p>
+                    Keep track of your purchases and
+                    understand how your business
+                    spending is being used.
+                </p>
+
+            </div>
+
+
+            <div class="business-card-info">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h2>
+                    Team Purchases
+                </h2>
+
+                <p>
+                    Make it easier for your team to
+                    manage approved business purchases.
+                </p>
+
+            </div>
+
+
+            <div class="business-card-info">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <h2>
+                    Secure Shopping
+                </h2>
+
+                <p>
+                    Keep your business payment
+                    information organized while
+                    shopping online.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- APPLICATION FORM -->
+
+        <section class="business-card-form-box">
+
+            <h2>
+                Apply for a Business Card
+            </h2>
+
+            <p>
+                Complete the form below to submit
+                your business card request.
+            </p>
+
+
+            <form id="businessCardForm">
+
+
+                <label for="businessCardName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="businessCardName"
+                    required
+                >
+
+
+                <label for="businessCardEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="businessCardEmail"
+                    required
+                >
+
+
+                <label for="companyName">
+                    Company Name
+                </label>
+
+                <input
+                    type="text"
+                    id="companyName"
+                    required
+                >
+
+
+                <label for="businessType">
+                    Business Type
+                </label>
+
+                <select
+                    id="businessType"
+                    required
+                >
+
+                    <option value="">
+                        Select business type
+                    </option>
+
+                    <option value="Retail">
+                        Retail
+                    </option>
+
+                    <option value="Technology">
+                        Technology
+                    </option>
+
+                    <option value="Services">
+                        Services
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+</html>
+
+               
+

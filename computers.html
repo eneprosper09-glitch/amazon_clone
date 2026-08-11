@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Computers | Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         HEADER
+    ========================================== -->
+
+    <header class="navbar">
+
+
+        <!-- LOGO -->
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Clone Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- LOCATION -->
+
+        <a href="delivery.html" class="nav-location">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <small>
+                    Deliver to
+                </small>
+
+                <h5>
+                    Nigeria
+                </h5>
+
+            </div>
+
+        </a>
+
+
+        <!-- SEARCH -->
+
+        <div class="search">
+
+            <select id="searchCategory">
+
+                <option value="all">
+                    All
+                </option>
+
+                <option value="electronics">
+                    Electronics
+                </option>
+
+                <option value="fashion">
+                    Fashion
+                </option>
+
+                <option value="home">
+                    Home
+                </option>
+
+                <option value="gaming">
+                    Gaming
+                </option>
+
+            </select>
+
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+                autocomplete="off"
+            >
+
+
+            <button
+                type="button"
+                id="searchBtn"
+                aria-label="Search"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- LANGUAGE -->
+
+        <div class="language">
+
+            <img
+                src="images/flag.png"
+                alt="English"
+            >
+
+            <span>
+                EN
+            </span>
+
+        </div>
+
+
+        <!-- ACCOUNT -->
+
+        <a href="account.html" class="account">
+
+            <small>
+                Hello, Sign in
+            </small>
+
+            <h5>
+                Account &amp; Lists
+            </h5>
+
+        </a>
+
+
+        <!-- ORDERS -->
+
+        <a href="orders.html" class="returns">
+
+            <small>
+                Returns
+            </small>
+
+            <h5>
+                &amp; Orders
+            </h5>
+
+        </a>
+
+
+        <!-- WISHLIST -->
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+
+                Wishlist
+                (
+                <span id="wishlist-count">
+                    0
+                </span>
+                )
+
+            </h4>
+
+        </a>
+
+
+        <!-- CART -->
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+
+                Cart
+                (
+                <span id="cart-count">
+                    0
+                </span>
+                )
+
+            </h4>
+
+        </a>
+
+
+    </header>
+
+
+
+    <!-- ==========================================
+         SECOND NAVIGATION
+    ========================================== -->
+
+    <nav class="second-nav">
+
+        <ul>
+
+            <li>
+
+                <a href="categories.html">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                    All
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="deals.html">
+                    Today's Deals
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="customer-service.html">
+                    Customer Service
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="registry.html">
+                    Registry
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="gift-cards.html">
+                    Gift Cards
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="sell.html">
+                    Sell
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- ==========================================
+         COMPUTERS PAGE
+    ========================================== -->
+
+    <main class="category-page">
+
+
+        <!-- PAGE INTRO -->
+
+        <section class="category-hero">
+
+            <h1>
+                Computers
+            </h1>
+
+            <p>
+                Explore laptops, keyboards,
+                routers and computer accessories.
+            </p>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             PRODUCTS
+        ========================================== -->
+
+        <section class="category-products-page">
+
+
+            <!-- LAPTOP -->
+
+            <div
+                class="product-card"
+                data-name="Laptop"
+                data-price="549999"
+                data-image="images/com1.png"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="images/com1.png"
+                        alt="Laptop"
+                    >
+
+                </div>
+
+
+                <h2>
+                    Laptop
+                </h2>
+
+
+                <p class="product-description">
+                    Powerful and reliable laptop
+                    for work, school and everyday
+                    computing.
+                </p>
+
+
+                <p class="price">
+                    ₦549,999
+                </p>
+
+
+                <div class="product-actions">
+
+
+                    <button
+                        type="button"
+                        class="wishlist-btn"
+                        aria-label="Add Laptop to wishlist"
+                    >
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="add-cart-btn"
+                    >
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- KEYBOARD -->
+
+            <div
+                class="product-card"
+                data-name="Keyboard"
+                data-price="24999"
+                data-image="images/com2.png"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="images/com2.png"
+                        alt="Keyboard"
+                    >
+
+                </div>
+
+
+                <h2>
+                    Keyboard
+                </h2>
+
+
+                <p class="product-description">
+                    Comfortable keyboard designed
+                    for smooth and responsive typing.
+                </p>
+
+
+                <p class="price">
+                    ₦24,999
+                </p>
+
+
+                <div class="product-actions">
+
+
+                    <button
+                        type="button"
+                        class="wishlist-btn"
+                        aria-label="Add Keyboard to wishlist"
+                    >
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="add-cart-btn"
+                    >
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ROUTER -->
+
+            <div
+                class="product-card"
+                data-name="WiFi Router"
+                data-price="39999"
+                data-image="images/com3.png"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="images/com3.png"
+                        alt="WiFi Router"
+                    >
+
+                </div>
+
+
+                <h2>
+                    WiFi Router
+                </h2>
+
+
+                <p class="product-description">
+                    Reliable WiFi router for fast
+                    and stable internet connectivity.
+                </p>
+
+
+                <p class="price">
+                    ₦39,999
+                </p>
+
+
+                <div class="product-actions">
+
+
+                    <button
+                        type="button"
+                        class="wishlist-btn"
+                        aria-label="Add WiFi Router to wishlist"
+                    >
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="add-cart-btn"
+                    >
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+
+        <div class="back">
+            Back to Top
+        </div>
+
+
+        <div class="footer-content">
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Get to Know Us
+                </h3>
+
+                <a href="#">
+                    Careers
+                </a>
+
+                <a href="#">
+                    About Amazon
+                </a>
+
+                <a href="#">
+                    Investor Relations
+                </a>
+
+                <a href="#">
+                    Devices
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Make Money with Us
+                </h3>
+
+                <a href="sell.html">
+                    Sell Products
+                </a>
+
+                <a href="#">
+                    Affiliate Program
+                </a>
+
+                <a href="#">
+                    Advertise
+                </a>
+
+                <a href="#">
+                    Self Publish
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Payment Products
+                </h3>
+
+                <a href="#">
+                    Business Card
+                </a>
+
+                <a href="#">
+                    Reload Balance
+                </a>
+
+                <a href="#">
+                    Currency Converter
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Let Us Help You
+                </h3>
+
+                <a href="account.html">
+                    Your Account
+                </a>
+
+                <a href="#">
+                    Shipping Rates
+                </a>
+
+                <a href="orders.html">
+                    Returns
+                </a>
+
+                <a href="customer-service.html">
+                    Help
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+
+            <p>
+                &copy; 2026 Amazon Clone.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

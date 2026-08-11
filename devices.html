@@ -1,0 +1,441 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Devices | Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <div class="navbar">
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <a
+            href="delivery.html"
+            class="nav-location"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <small>Deliver to</small>
+
+                <h5>Nigeria</h5>
+
+            </div>
+
+        </a>
+
+
+        <div class="search">
+
+            <select>
+
+                <option>All</option>
+
+            </select>
+
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+            >
+
+
+            <button
+                type="button"
+                id="searchBtn"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="language">
+
+            <img
+                src="images/flag.png"
+                alt="English"
+            >
+
+            <span>EN</span>
+
+        </div>
+
+
+        <a
+            href="account.html"
+            class="account"
+        >
+
+            <small>Hello, Sign in</small>
+
+            <h5>Account &amp; Lists</h5>
+
+        </a>
+
+
+        <a
+            href="orders.html"
+            class="returns"
+        >
+
+            <small>Returns</small>
+
+            <h5>&amp; Orders</h5>
+
+        </a>
+
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+                Wishlist
+                (<span id="wishlist-count">0</span>)
+            </h4>
+
+        </a>
+
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+                Cart
+                (<span id="cart-count">0</span>)
+            </h4>
+
+        </a>
+
+    </div>
+
+
+    <!-- DEVICES PAGE -->
+
+    <main class="devices-page">
+
+
+        <section class="devices-hero">
+
+            <h1>
+                Devices
+            </h1>
+
+            <p>
+                Discover technology and devices
+                designed to make everyday life
+                easier and more convenient.
+            </p>
+
+        </section>
+
+
+        <section class="devices-grid">
+
+
+            <div class="device-card">
+
+                <i class="fa-solid fa-mobile-screen-button"></i>
+
+                <h2>
+                    Smartphones
+                </h2>
+
+                <p>
+                    Explore smartphones and mobile
+                    devices for communication,
+                    entertainment and everyday use.
+                </p>
+
+                <a
+                    href="index.html"
+                    class="device-btn"
+                >
+                    Shop Smartphones
+                </a>
+
+            </div>
+
+
+            <div class="device-card">
+
+                <i class="fa-solid fa-laptop"></i>
+
+                <h2>
+                    Laptops
+                </h2>
+
+                <p>
+                    Find laptops suitable for school,
+                    work, creativity and everyday
+                    computing.
+                </p>
+
+                <a
+                    href="index.html"
+                    class="device-btn"
+                >
+                    Shop Laptops
+                </a>
+
+            </div>
+
+
+            <div class="device-card">
+
+                <i class="fa-solid fa-headphones"></i>
+
+                <h2>
+                    Audio Devices
+                </h2>
+
+                <p>
+                    Browse headphones, earbuds and
+                    other audio products for music
+                    and entertainment.
+                </p>
+
+                <a
+                    href="index.html"
+                    class="device-btn"
+                >
+                    Shop Audio
+                </a>
+
+            </div>
+
+
+            <div class="device-card">
+
+                <i class="fa-solid fa-tv"></i>
+
+                <h2>
+                    Home Electronics
+                </h2>
+
+                <p>
+                    Discover electronics and smart
+                    devices for your home.
+                </p>
+
+                <a
+                    href="index.html"
+                    class="device-btn"
+                >
+                    Shop Electronics
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+        <section class="devices-info">
+
+            <h2>
+                Find the Right Device
+            </h2>
+
+            <p>
+                Whether you need a device for school,
+                work, entertainment or everyday use,
+                our store makes it easy to explore
+                different products.
+            </p>
+
+            <a
+                href="index.html"
+                class="device-main-btn"
+            >
+                Start Shopping
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div
+            class="back"
+            onclick="window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });"
+        >
+            Back to Top
+        </div>
+
+
+        <div class="footer-content">
+
+            <div class="footer-column">
+
+                <h3>Get to Know Us</h3>
+
+                <a href="careers.html">
+                    Careers
+                </a>
+
+                <a href="about.html">
+                    About Amazon
+                </a>
+
+                <a href="investor-relations.html">
+                    Investor Relations
+                </a>
+
+                <a href="devices.html">
+                    Devices
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Make Money with Us</h3>
+
+                <a href="sell.html">
+                    Sell Products
+                </a>
+
+                <a href="affiliate.html">
+                    Affiliate Program
+                </a>
+
+                <a href="advertise.html">
+                    Advertise
+                </a>
+
+                <a href="self-publish.html">
+                    Self Publish
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Payment Products</h3>
+
+                <a href="business-card.html">
+                    Business Card
+                </a>
+
+                <a href="reload-balance.html">
+                    Reload Balance
+                </a>
+
+                <a href="currency-converter.html">
+                    Currency Converter
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Let Us Help You</h3>
+
+                <a href="account.html">
+                    Your Account
+                </a>
+
+                <a href="shipping.html">
+                    Shipping Rates
+                </a>
+
+                <a href="orders.html">
+                    Returns
+                </a>
+
+                <a href="customer-service.html">
+                    Help
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+            <p>
+                &copy; 2026 Amazon Clone.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

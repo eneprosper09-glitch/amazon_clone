@@ -1,0 +1,350 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Registry | Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="navbar">
+
+        <!-- Logo -->
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- Location -->
+
+        <a
+            href="delivery.html"
+            class="nav-location"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <small>Deliver to</small>
+
+                <h5>Nigeria</h5>
+
+            </div>
+
+        </a>
+
+
+        <!-- Search -->
+
+        <div class="search">
+
+            <select>
+
+                <option>All</option>
+
+            </select>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+            >
+
+            <button
+                type="button"
+                id="searchBtn"
+                aria-label="Search"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Account -->
+
+        <a
+            href="account.html"
+            class="account"
+        >
+
+            <small>Hello, Sign in</small>
+
+            <h5>Account &amp; Lists</h5>
+
+        </a>
+
+
+        <!-- Returns & Orders -->
+
+        <a
+            href="orders.html"
+            class="returns"
+        >
+
+            <small>Returns</small>
+
+            <h5>&amp; Orders</h5>
+
+        </a>
+
+
+        <!-- Wishlist -->
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+                Wishlist
+                (<span id="wishlist-count">0</span>)
+            </h4>
+
+        </a>
+
+
+        <!-- Cart -->
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+                Cart
+                (<span id="cart-count">0</span>)
+            </h4>
+
+        </a>
+
+    </div>
+
+
+    <!-- SECOND NAV -->
+
+    <nav>
+
+        <ul>
+
+            <li>
+
+                <i class="fa-solid fa-bars"></i>
+
+                All
+
+            </li>
+
+
+            <li>
+
+                <a href="deals.html">
+                    Today's Deals
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="customer-service.html">
+                    Customer Service
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="registry.html">
+                    Registry
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="gift-cards.html">
+                    Gift Cards
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="sell.html">
+                    Sell
+                </a>
+
+            </li>
+
+        </ul>
+
+
+        <div>
+            Shop Deals in Electronics
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= REGISTRY ================= -->
+
+<main class="registry-page">
+
+    <div class="registry-box">
+
+        <h1>
+            Create Your Registry
+        </h1>
+
+
+        <p>
+            Create a registry and make it easier
+            for friends and family to find the
+            gifts you want.
+        </p>
+
+
+        <form id="registryForm">
+
+
+            <label for="registryName">
+
+                Registry Name
+
+            </label>
+
+
+            <input
+                type="text"
+                id="registryName"
+                placeholder="e.g. Wedding Registry"
+                required
+            >
+
+
+            <label for="registryType">
+
+                Registry Type
+
+            </label>
+
+
+            <select
+                id="registryType"
+                required
+            >
+
+                <option value="">
+
+                    Select registry type
+
+                </option>
+
+
+                <option value="Wedding">
+
+                    Wedding
+
+                </option>
+
+
+                <option value="Birthday">
+
+                    Birthday
+
+                </option>
+
+
+                <option value="Baby">
+
+                    Baby
+
+                </option>
+
+
+                <option value="Other">
+
+                    Other
+
+                </option>
+
+            </select>
+
+
+            <label for="registryDate">
+
+                Event Date
+
+            </label>
+
+
+            <input
+                type="date"
+                id="registryDate"
+                required
+            >
+
+
+            <button
+                type="submit"
+                class="auth-btn"
+            >
+
+                Create Registry
+
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

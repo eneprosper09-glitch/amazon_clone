@@ -1,0 +1,252 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Delivery | Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="navbar">
+
+        <!-- Logo -->
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- Location -->
+
+        <a
+            href="delivery.html"
+            class="nav-location"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <small>Deliver to</small>
+
+                <h5>Nigeria</h5>
+
+            </div>
+
+        </a>
+
+
+        <!-- Search -->
+
+        <div class="search">
+
+            <select>
+
+                <option>All</option>
+
+            </select>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+            >
+
+            <button
+                type="button"
+                id="searchBtn"
+                aria-label="Search"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Account -->
+
+        <a
+            href="account.html"
+            class="account"
+        >
+
+            <small>Hello, Sign in</small>
+
+            <h5>Account &amp; Lists</h5>
+
+        </a>
+
+
+        <!-- Orders -->
+
+        <a
+            href="orders.html"
+            class="returns"
+        >
+
+            <small>Returns</small>
+
+            <h5>&amp; Orders</h5>
+
+        </a>
+
+
+        <!-- Wishlist -->
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+                Wishlist
+                (<span id="wishlist-count">0</span>)
+            </h4>
+
+        </a>
+
+
+        <!-- Cart -->
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+                Cart
+                (<span id="cart-count">0</span>)
+            </h4>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="delivery-page">
+
+    <h1>Delivery Information</h1>
+
+    <div class="delivery-card">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <h2>Deliver to Nigeria</h2>
+
+        <p>
+            Your selected delivery country is
+            <strong>Nigeria</strong>.
+        </p>
+
+        <p>
+            Delivery options and availability
+            may vary depending on the product
+            and your location.
+        </p>
+
+        <button
+            type="button"
+            id="changeLocationBtn"
+        >
+            Change Delivery Location
+        </button>
+
+    </div>
+
+
+    <div class="delivery-options">
+
+        <h2>Delivery Options</h2>
+
+        <div class="delivery-grid">
+
+            <div class="delivery-option">
+
+                <i class="fa-solid fa-truck"></i>
+
+                <h3>Standard Delivery</h3>
+
+                <p>
+                    Reliable delivery to your
+                    selected address.
+                </p>
+
+            </div>
+
+
+            <div class="delivery-option">
+
+                <i class="fa-solid fa-box"></i>
+
+                <h3>Order Tracking</h3>
+
+                <p>
+                    Track your order from
+                    shipment to delivery.
+                </p>
+
+            </div>
+
+
+            <div class="delivery-option">
+
+                <i class="fa-solid fa-map-location-dot"></i>
+
+                <h3>Delivery Address</h3>
+
+                <p>
+                    Manage the address where
+                    your orders should be delivered.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,118 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Wishlist | Amazon Clone</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="navbar">
+
+        <!-- Logo -->
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- Wishlist Title -->
+
+        <h2>
+            My Wishlist ❤️
+        </h2>
+
+
+        <!-- Continue Shopping -->
+
+        <a
+            href="index.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-house"></i>
+
+            <h4>
+                Continue Shopping
+            </h4>
+
+        </a>
+
+
+        <!-- Cart -->
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+
+                Cart
+                (<span id="cart-count">0</span>)
+
+            </h4>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= WISHLIST ================= -->
+
+<main class="wishlist-page">
+
+    <h1>
+        Saved Products
+    </h1>
+
+
+    <!-- JavaScript displays wishlist here -->
+
+    <div id="wishlistItems">
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

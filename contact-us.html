@@ -1,0 +1,491 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact Us | Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header>
+
+    <div class="navbar">
+
+
+        <!-- Logo -->
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- Location -->
+
+        <a
+            href="delivery.html"
+            class="nav-location"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <small>Deliver to</small>
+
+                <h5>Nigeria</h5>
+
+            </div>
+
+        </a>
+
+
+        <!-- Search -->
+
+        <div class="search">
+
+            <select>
+
+                <option>All</option>
+
+            </select>
+
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+            >
+
+
+            <button
+                type="button"
+                id="searchBtn"
+                aria-label="Search"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Account -->
+
+        <a
+            href="account.html"
+            class="account"
+        >
+
+            <small>Hello, Sign in</small>
+
+            <h5>Account &amp; Lists</h5>
+
+        </a>
+
+
+        <!-- Returns & Orders -->
+
+        <a
+            href="orders.html"
+            class="returns"
+        >
+
+            <small>Returns</small>
+
+            <h5>&amp; Orders</h5>
+
+        </a>
+
+
+        <!-- Wishlist -->
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+                Wishlist
+                (<span id="wishlist-count">0</span>)
+            </h4>
+
+        </a>
+
+
+        <!-- Cart -->
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+                Cart
+                (<span id="cart-count">0</span>)
+            </h4>
+
+        </a>
+
+    </div>
+
+
+    <!-- ======================================
+         SECOND NAV
+    ======================================= -->
+
+    <nav>
+
+        <ul>
+
+            <li>
+
+                <i class="fa-solid fa-bars"></i>
+
+                All
+
+            </li>
+
+
+            <li>
+
+                <a href="deals.html">
+                    Today's Deals
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="customer-service.html">
+                    Customer Service
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="registry.html">
+                    Registry
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="gift-cards.html">
+                    Gift Cards
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="sell.html">
+                    Sell
+                </a>
+
+            </li>
+
+        </ul>
+
+
+        <div>
+            Shop Deals in Electronics
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ==========================================
+     CONTACT PAGE
+========================================== -->
+
+<main class="contact-page">
+
+
+    <div class="contact-container">
+
+
+        <!-- Page Heading -->
+
+        <div class="contact-header">
+
+            <h1>
+                Contact Us
+            </h1>
+
+            <p>
+                We're here to help. Send us a message
+                and we'll get back to you.
+            </p>
+
+        </div>
+
+
+
+        <!-- Contact Information -->
+
+        <div class="contact-info">
+
+
+            <div class="contact-info-card">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+
+                    <h3>
+                        Phone
+                    </h3>
+
+                    <p>
+                        +234 800 000 0000
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-info-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+
+                    <h3>
+                        Email
+                    </h3>
+
+                    <p>
+                        support@amazonclone.com
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-info-card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+
+                    <h3>
+                        Location
+                    </h3>
+
+                    <p>
+                        Nigeria
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Contact Form -->
+
+        <div class="contact-form-box">
+
+            <h2>
+                Send Us a Message
+            </h2>
+
+
+            <form id="contactForm">
+
+
+                <!-- Name -->
+
+                <label for="contactName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="contactName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+
+                <!-- Email -->
+
+                <label for="contactEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="contactEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+
+                <!-- Phone -->
+
+                <label for="contactPhone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="contactPhone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+
+
+                <!-- Subject -->
+
+                <label for="contactSubject">
+                    Subject
+                </label>
+
+                <select
+                    id="contactSubject"
+                    required
+                >
+
+                    <option value="">
+                        Select a subject
+                    </option>
+
+                    <option value="Order">
+                        Order
+                    </option>
+
+                    <option value="Delivery">
+                        Delivery
+                    </option>
+
+                    <option value="Returns">
+                        Returns &amp; Refunds
+                    </option>
+
+                    <option value="Product">
+                        Product Question
+                    </option>
+
+                    <option value="Account">
+                        Account
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+
+
+                <!-- Order Number -->
+
+                <label for="orderNumber">
+                    Order Number
+                    <span>(Optional)</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="orderNumber"
+                    placeholder="e.g. ORD-123456"
+                >
+
+
+
+                <!-- Message -->
+
+                <label for="contactMessage">
+                    Message
+                </label>
+
+                <textarea
+                    id="contactMessage"
+                    rows="6"
+                    placeholder="Tell us how we can help..."
+                    required
+                ></textarea>
+
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="auth-btn"
+                >
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+```

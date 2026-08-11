@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Kitchen | Amazon Clone</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         HEADER
+    ========================================== -->
+
+    <header class="navbar">
+
+
+        <!-- LOGO -->
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Clone Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- LOCATION -->
+
+        <a
+            href="delivery.html"
+            class="nav-location"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <small>
+                    Deliver to
+                </small>
+
+                <h5>
+                    Nigeria
+                </h5>
+
+            </div>
+
+        </a>
+
+
+        <!-- SEARCH -->
+
+        <div class="search">
+
+            <select id="searchCategory">
+
+                <option value="all">
+                    All
+                </option>
+
+                <option value="electronics">
+                    Electronics
+                </option>
+
+                <option value="fashion">
+                    Fashion
+                </option>
+
+                <option value="home">
+                    Home
+                </option>
+
+                <option value="gaming">
+                    Gaming
+                </option>
+
+            </select>
+
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+                autocomplete="off"
+            >
+
+
+            <button
+                type="button"
+                id="searchBtn"
+                aria-label="Search"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- LANGUAGE -->
+
+        <div class="language">
+
+            <img
+                src="images/flag.png"
+                alt="English"
+            >
+
+            <span>
+                EN
+            </span>
+
+        </div>
+
+
+        <!-- ACCOUNT -->
+
+        <a
+            href="account.html"
+            class="account"
+        >
+
+            <small>
+                Hello, Sign in
+            </small>
+
+            <h5>
+                Account &amp; Lists
+            </h5>
+
+        </a>
+
+
+        <!-- ORDERS -->
+
+        <a
+            href="orders.html"
+            class="returns"
+        >
+
+            <small>
+                Returns
+            </small>
+
+            <h5>
+                &amp; Orders
+            </h5>
+
+        </a>
+
+
+        <!-- WISHLIST -->
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+
+                Wishlist
+                (
+                <span id="wishlist-count">
+                    0
+                </span>
+                )
+
+            </h4>
+
+        </a>
+
+
+        <!-- CART -->
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+
+                Cart
+                (
+                <span id="cart-count">
+                    0
+                </span>
+                )
+
+            </h4>
+
+        </a>
+
+
+    </header>
+
+
+
+    <!-- ==========================================
+         SECOND NAVIGATION
+    ========================================== -->
+
+    <nav class="second-nav">
+
+        <ul>
+
+
+            <li>
+
+                <a href="categories.html">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                    All
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="deals.html">
+
+                    Today's Deals
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="customer-service.html">
+
+                    Customer Service
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="registry.html">
+
+                    Registry
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="gift-cards.html">
+
+                    Gift Cards
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="sell.html">
+
+                    Sell
+
+                </a>
+
+            </li>
+
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- ==========================================
+         KITCHEN PAGE
+    ========================================== -->
+
+    <main class="category-page">
+
+
+        <!-- PAGE TITLE -->
+
+        <section class="category-hero">
+
+            <h1>
+                Kitchen Must-Haves
+            </h1>
+
+            <p>
+                Discover cookware, appliances
+                and essential kitchen products.
+            </p>
+
+        </section>
+
+
+
+        <!-- PRODUCTS -->
+
+        <section class="category-products-page">
+
+
+            <!-- COOKWARE -->
+
+            <div
+    class="product-card"
+    data-name="Cookware"
+    data-price="45999"
+    data-image="images/kit1.png"
+>
+
+    <div class="product-image">
+
+        <img
+            src="images/kit1.png"
+            alt="Cookware"
+        >
+
+    </div>
+
+    <h2>
+        Cookware
+    </h2>
+
+    <p class="product-description">
+        Quality cookware for everyday
+        cooking and meal preparation.
+    </p>
+
+    <p class="price">
+        ₦45,999
+    </p>
+
+    <div class="product-actions">
+
+        <button
+            type="button"
+            class="wishlist-btn"
+            aria-label="Add Cookware to wishlist"
+        >
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <button
+            type="button"
+            class="add-cart-btn"
+        >
+            Add to Cart
+        </button>
+
+    </div>
+
+</div>
+
+
+
+            <div
+    class="product-card"
+    data-name="Kettle"
+    data-price="32999"
+    data-image="images/kit2.png"
+>
+
+    <div class="product-image">
+
+        <img
+            src="images/kit2.png"
+            alt="Kettle"
+        >
+
+    </div>
+
+    <h2>
+        Kettle
+    </h2>
+
+    <p class="product-description">
+        Convenient kitchen kettle
+        for boiling water quickly.
+    </p>
+
+    <p class="price">
+        ₦32,999
+    </p>
+
+    <div class="product-actions">
+
+        <button
+            type="button"
+            class="wishlist-btn"
+            aria-label="Add Kettle to wishlist"
+        >
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <button
+            type="button"
+            class="add-cart-btn"
+        >
+            Add to Cart
+        </button>
+
+    </div>
+
+</div>
+
+
+
+           <div
+    class="product-card"
+    data-name="Toaster"
+    data-price="28999"
+    data-image="images/kit3.png"
+>
+
+    <div class="product-image">
+
+        <img
+            src="images/kit3.png"
+            alt="Toaster"
+        >
+
+    </div>
+
+    <h2>
+        Toaster
+    </h2>
+
+    <p class="product-description">
+        Easy-to-use toaster for
+        preparing delicious breakfast.
+    </p>
+
+    <p class="price">
+        ₦28,999
+    </p>
+
+    <div class="product-actions">
+
+        <button
+            type="button"
+            class="wishlist-btn"
+            aria-label="Add Toaster to wishlist"
+        >
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <button
+            type="button"
+            class="add-cart-btn"
+        >
+            Add to Cart
+        </button>
+
+    </div>
+
+</div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+
+        <div class="back">
+            Back to Top
+        </div>
+
+
+        <div class="footer-content">
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Get to Know Us
+                </h3>
+
+                <a href="#">
+                    Careers
+                </a>
+
+                <a href="#">
+                    About Amazon
+                </a>
+
+                <a href="#">
+                    Investor Relations
+                </a>
+
+                <a href="#">
+                    Devices
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Make Money with Us
+                </h3>
+
+                <a href="sell.html">
+                    Sell Products
+                </a>
+
+                <a href="#">
+                    Affiliate Program
+                </a>
+
+                <a href="#">
+                    Advertise
+                </a>
+
+                <a href="#">
+                    Self Publish
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Payment Products
+                </h3>
+
+                <a href="#">
+                    Business Card
+                </a>
+
+                <a href="#">
+                    Reload Balance
+                </a>
+
+                <a href="#">
+                    Currency Converter
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Let Us Help You
+                </h3>
+
+                <a href="account.html">
+                    Your Account
+                </a>
+
+                <a href="#">
+                    Shipping Rates
+                </a>
+
+                <a href="orders.html">
+                    Returns
+                </a>
+
+                <a href="customer-service.html">
+                    Help
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+
+            <p>
+
+                &copy; 2026 Amazon Clone.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Apple AirPods Pro | Amazon Clone</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="navbar">
+
+        <!-- Logo -->
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo">
+
+            </a>
+
+        </div>
+
+
+        <!-- Search -->
+
+        <div class="search">
+
+            <select>
+
+                <option>All</option>
+
+            </select>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon">
+
+            <button
+                type="button"
+                id="searchBtn"
+                aria-label="Search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Wishlist -->
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>Wishlist</h4>
+
+        </a>
+
+
+        <!-- Cart -->
+
+        <a
+            href="cart.html"
+            class="cart">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+                Cart (<span id="cart-count">0</span>)
+            </h4>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- Breadcrumb -->
+
+<nav class="breadcrumb">
+
+    <a href="index.html">Home</a>
+
+    <span>›</span>
+
+    <a href="#">Electronics</a>
+
+    <span>›</span>
+
+    <a href="#">Headphones</a>
+
+    <span>›</span>
+
+    <span>Apple AirPods Pro</span>
+
+</nav>
+
+
+<!-- Product -->
+
+<main class="product-page">
+
+
+    <!-- Product Image -->
+
+    <div class="product-gallery">
+
+        <img
+            src="images/product1.png"
+            alt="Apple AirPods Pro">
+
+    </div>
+
+
+    <!-- Product Details -->
+
+    <div
+        class="product-details"
+
+        data-name="Apple AirPods Pro (2nd Generation)"
+
+        data-price="189999"
+
+        data-image="images/product1.png">
+
+        <h1>
+            Apple AirPods Pro (2nd Generation)
+        </h1>
+
+
+        <div class="rating">
+
+            ★★★★★
+
+            <span>
+                (2,430 Reviews)
+            </span>
+
+        </div>
+
+
+        <p class="price">
+            ₦189,999
+        </p>
+
+
+        <p class="stock">
+            In Stock
+        </p>
+
+
+        <p class="description">
+
+            AirPods Pro feature Active Noise
+            Cancellation, Transparency Mode,
+            Personalized Spatial Audio, USB-C
+            charging case and up to 30 hours
+            of listening time.
+
+        </p>
+
+
+        <!-- Add To Cart -->
+
+        <button
+            id="addToCart"
+            class="cart-btn"
+            type="button">
+
+            Add to Cart
+
+        </button>
+
+
+        <!-- Buy Now -->
+
+        <button
+            id="buyNow"
+            class="buy-btn"
+            type="button">
+
+            Buy Now
+
+        </button>
+
+    </div>
+
+</main>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

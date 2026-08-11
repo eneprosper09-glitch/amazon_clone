@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gaming Accessories | Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="navbar">
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Clone Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <a href="delivery.html" class="nav-location">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <small>Deliver to</small>
+
+                <h5>Nigeria</h5>
+
+            </div>
+
+        </a>
+
+
+        <!-- SEARCH -->
+
+        <div class="search">
+
+            <select id="searchCategory">
+
+                <option value="all">All</option>
+
+                <option value="electronics">
+                    Electronics
+                </option>
+
+                <option value="fashion">
+                    Fashion
+                </option>
+
+                <option value="home">
+                    Home
+                </option>
+
+                <option value="gaming">
+                    Gaming
+                </option>
+
+            </select>
+
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+                autocomplete="off"
+            >
+
+
+            <button
+                type="button"
+                id="searchBtn"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- LANGUAGE -->
+
+        <div class="language">
+
+            <img
+                src="images/flag.png"
+                alt="English"
+            >
+
+            <span>EN</span>
+
+        </div>
+
+
+        <!-- ACCOUNT -->
+
+        <a href="account.html" class="account">
+
+            <small>Hello, Sign in</small>
+
+            <h5>Account &amp; Lists</h5>
+
+        </a>
+
+
+        <!-- ORDERS -->
+
+        <a href="orders.html" class="returns">
+
+            <small>Returns</small>
+
+            <h5>&amp; Orders</h5>
+
+        </a>
+
+
+        <!-- WISHLIST -->
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+
+                Wishlist
+                (<span id="wishlist-count">0</span>)
+
+            </h4>
+
+        </a>
+
+
+        <!-- CART -->
+
+        <a href="cart.html" class="cart">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+
+                Cart
+                (<span id="cart-count">0</span>)
+
+            </h4>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- SECOND NAV -->
+
+    <nav class="second-nav">
+
+        <ul>
+
+            <li>
+
+                <a href="categories.html">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                    All
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="deals.html">
+                    Today's Deals
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="customer-service.html">
+                    Customer Service
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="registry.html">
+                    Registry
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="gift-cards.html">
+                    Gift Cards
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="sell.html">
+                    Sell
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- GAMING PAGE -->
+
+    <main class="category-page">
+
+
+        <section class="category-hero">
+
+            <h1>
+                Gaming Accessories
+            </h1>
+
+            <p>
+                Upgrade your gaming setup with
+                quality gaming accessories.
+            </p>
+
+        </section>
+
+
+
+        <!-- PRODUCTS -->
+
+        <section class="category-products-page">
+
+
+            <!-- MOUSE -->
+
+            <div
+                class="product-card"
+                data-name="Gaming Mouse"
+                data-price="24999"
+                data-image="images/mouse.png"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="images/mouse.png"
+                        alt="Gaming Mouse"
+                    >
+
+                </div>
+
+
+                <h2>
+                    Gaming Mouse
+                </h2>
+
+
+                <p class="product-description">
+
+                    Responsive gaming mouse designed
+                    for smooth and precise gameplay.
+
+                </p>
+
+
+                <p class="price">
+                    ₦24,999
+                </p>
+
+
+                <div class="product-actions">
+
+
+                    <button
+                        type="button"
+                        class="wishlist-btn"
+                    >
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="add-cart-btn"
+                    >
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MONITOR -->
+
+            <div
+                class="product-card"
+                data-name="Gaming Monitor"
+                data-price="189999"
+                data-image="images/monitor.png"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="images/monitor.png"
+                        alt="Gaming Monitor"
+                    >
+
+                </div>
+
+
+                <h2>
+                    Gaming Monitor
+                </h2>
+
+
+                <p class="product-description">
+
+                    High-quality monitor for an
+                    immersive gaming experience.
+
+                </p>
+
+
+                <p class="price">
+                    ₦189,999
+                </p>
+
+
+                <div class="product-actions">
+
+
+                    <button
+                        type="button"
+                        class="wishlist-btn"
+                    >
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="add-cart-btn"
+                    >
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GAMING CHAIR -->
+
+            <div
+                class="product-card"
+                data-name="Gaming Chair"
+                data-price="149999"
+                data-image="images/chair.png"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="images/chair.png"
+                        alt="Gaming Chair"
+                    >
+
+                </div>
+
+
+                <h2>
+                    Gaming Chair
+                </h2>
+
+
+                <p class="product-description">
+
+                    Comfortable gaming chair designed
+                    for long gaming sessions.
+
+                </p>
+
+
+                <p class="price">
+                    ₦149,999
+                </p>
+
+
+                <div class="product-actions">
+
+
+                    <button
+                        type="button"
+                        class="wishlist-btn"
+                    >
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="add-cart-btn"
+                    >
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="back">
+            Back to Top
+        </div>
+
+
+        <div class="footer-content">
+
+
+            <div class="footer-column">
+
+                <h3>Get to Know Us</h3>
+
+                <a href="#">Careers</a>
+
+                <a href="#">About Amazon</a>
+
+                <a href="#">Investor Relations</a>
+
+                <a href="#">Devices</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Make Money with Us</h3>
+
+                <a href="sell.html">
+                    Sell Products
+                </a>
+
+                <a href="#">Affiliate Program</a>
+
+                <a href="#">Advertise</a>
+
+                <a href="#">Self Publish</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Payment Products</h3>
+
+                <a href="#">Business Card</a>
+
+                <a href="#">Reload Balance</a>
+
+                <a href="#">Currency Converter</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Let Us Help You</h3>
+
+                <a href="account.html">
+                    Your Account
+                </a>
+
+                <a href="#">
+                    Shipping Rates
+                </a>
+
+                <a href="orders.html">
+                    Returns
+                </a>
+
+                <a href="customer-service.html">
+                    Help
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+
+            <p>
+                &copy; 2026 Amazon Clone.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

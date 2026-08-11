@@ -1,0 +1,509 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Currency Converter | Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <div class="navbar">
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <a href="delivery.html" class="nav-location">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <small>Deliver to</small>
+
+                <h5>Nigeria</h5>
+
+            </div>
+
+        </a>
+
+
+        <div class="search">
+
+            <select>
+                <option>All</option>
+            </select>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+            >
+
+            <button
+                type="button"
+                id="searchBtn"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="language">
+
+            <img
+                src="images/flag.png"
+                alt="English"
+            >
+
+            <span>EN</span>
+
+        </div>
+
+
+        <a href="account.html" class="account">
+
+            <small>Hello, Sign in</small>
+
+            <h5>Account &amp; Lists</h5>
+
+        </a>
+
+
+        <a href="orders.html" class="returns">
+
+            <small>Returns</small>
+
+            <h5>&amp; Orders</h5>
+
+        </a>
+
+
+        <a href="wishlist.html" class="wishlist-link">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+                Wishlist
+                (<span id="wishlist-count">0</span>)
+            </h4>
+
+        </a>
+
+
+        <a href="cart.html" class="cart">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+                Cart
+                (<span id="cart-count">0</span>)
+            </h4>
+
+        </a>
+
+    </div>
+
+
+    <!-- CURRENCY CONVERTER -->
+
+    <main class="currency-page">
+
+        <section class="currency-hero">
+
+            <i class="fa-solid fa-money-bill-transfer"></i>
+
+            <h1>Currency Converter</h1>
+
+            <p>
+                Convert between different currencies
+                for your shopping calculations.
+            </p>
+
+        </section>
+
+
+        <section class="currency-box">
+
+            <h2>Convert Currency</h2>
+
+
+            <form id="currencyForm">
+
+
+                <label for="currencyAmount">
+                    Amount
+                </label>
+
+                <input
+                    type="number"
+                    id="currencyAmount"
+                    placeholder="Enter amount"
+                    min="0"
+                    step="any"
+                    required
+                >
+
+
+                <label for="fromCurrency">
+                    From
+                </label>
+
+                <select
+                    id="fromCurrency"
+                    required
+                >
+
+                    <option value="NGN">
+                        Nigerian Naira (₦)
+                    </option>
+
+                    <option value="USD">
+                        US Dollar ($)
+                    </option>
+
+                    <option value="GBP">
+                        British Pound (£)
+                    </option>
+
+                    <option value="EUR">
+                        Euro (€)
+                    </option>
+
+                </select>
+
+
+                <label for="toCurrency">
+                    To
+                </label>
+
+                <select
+                    id="toCurrency"
+                    required
+                >
+
+                    <option value="USD">
+                        US Dollar ($)
+                    </option>
+
+                    <option value="NGN">
+                        Nigerian Naira (₦)
+                    </option>
+
+                    <option value="GBP">
+                        British Pound (£)
+                    </option>
+
+                    <option value="EUR">
+                        Euro (€)
+                    </option>
+
+                </select>
+
+
+                <button
+                    type="submit"
+                    class="currency-btn"
+                >
+                    Convert
+                </button>
+
+            </form>
+
+
+            <div
+                id="conversionResult"
+                class="conversion-result"
+            ></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div
+            class="back"
+            onclick="window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });"
+        >
+            Back to Top
+        </div>
+
+
+        <div class="footer-content">
+
+
+            <div class="footer-column">
+
+                <h3>Get to Know Us</h3>
+
+                <a href="careers.html">
+                    Careers
+                </a>
+
+                <a href="about.html">
+                    About Amazon
+                </a>
+
+                <a href="investor-relations.html">
+                    Investor Relations
+                </a>
+
+                <a href="devices.html">
+                    Devices
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Make Money with Us</h3>
+
+                <a href="sell.html">
+                    Sell Products
+                </a>
+
+                <a href="affiliate.html">
+                    Affiliate Program
+                </a>
+
+                <a href="advertise.html">
+                    Advertise
+                </a>
+
+                <a href="self-publish.html">
+                    Self Publish
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Payment Products</h3>
+
+                <a href="business-card.html">
+                    Business Card
+                </a>
+
+                <a href="reload-balance.html">
+                    Reload Balance
+                </a>
+
+                <a href="currency-converter.html">
+                    Currency Converter
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Let Us Help You</h3>
+
+                <a href="account.html">
+                    Your Account
+                </a>
+
+                <a href="shipping.html">
+                    Shipping Rates
+                </a>
+
+                <a href="orders.html">
+                    Returns
+                </a>
+
+                <a href="customer-service.html">
+                    Help
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+            <p>
+                &copy; 2026 Amazon Clone.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+    <script>
+
+        /* ==========================================
+           CURRENCY CONVERTER
+        ========================================== */
+
+        const currencyForm =
+            document.getElementById("currencyForm");
+
+        const conversionResult =
+            document.getElementById("conversionResult");
+
+
+        /*
+            Demo exchange rates.
+
+            These are fixed example rates for
+            this practice project.
+        */
+
+        const rates = {
+
+            NGN: 1,
+
+            USD: 1500,
+
+            GBP: 2000,
+
+            EUR: 1700
+
+        };
+
+
+        currencyForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                const amount =
+                    Number(
+                        document.getElementById(
+                            "currencyAmount"
+                        ).value
+                    );
+
+
+                const from =
+                    document.getElementById(
+                        "fromCurrency"
+                    ).value;
+
+
+                const to =
+                    document.getElementById(
+                        "toCurrency"
+                    ).value;
+
+
+                if (
+                    !amount ||
+                    amount < 0
+                ) {
+
+                    conversionResult.textContent =
+                        "Please enter a valid amount.";
+
+                    return;
+
+                }
+
+
+                /*
+                    Convert the original amount
+                    to NGN first.
+                */
+
+                const amountInNaira =
+                    amount * rates[from];
+
+
+                /*
+                    Then convert NGN
+                    into the selected currency.
+                */
+
+                const convertedAmount =
+                    amountInNaira / rates[to];
+
+
+                conversionResult.textContent =
+                    amount.toLocaleString(
+                        undefined,
+                        {
+                            maximumFractionDigits: 2
+                        }
+                    ) +
+                    " " +
+                    from +
+                    " = " +
+                    convertedAmount.toLocaleString(
+                        undefined,
+                        {
+                            maximumFractionDigits: 2
+                        }
+                    ) +
+                    " " +
+                    to;
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
+

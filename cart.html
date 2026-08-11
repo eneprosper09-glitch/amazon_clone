@@ -1,0 +1,156 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Your Shopping Cart | Amazon Clone</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="navbar">
+
+        <!-- Logo -->
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- Search -->
+        <div class="search">
+
+            <select>
+                <option>All</option>
+            </select>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+            >
+
+            <button
+                type="button"
+                id="searchBtn"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Wishlist -->
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>Wishlist</h4>
+
+        </a>
+
+
+        <!-- Cart -->
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+                Cart (<span id="cart-count">0</span>)
+            </h4>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= CART ================= -->
+
+<main class="cart-page">
+
+    <h1>Shopping Cart</h1>
+
+
+    <div class="cart-container">
+
+
+        <!-- JavaScript puts products here -->
+
+        <div id="cartItems">
+
+        </div>
+
+
+        <!-- Summary -->
+
+        <div class="cart-summary">
+
+    <h2>Cart Summary</h2>
+
+    <p>
+        Items:
+        <span id="cart-total-items">0</span>
+    </p>
+
+    <h3 id="subtotal">₦0</h3>
+
+    <a
+        href="checkout.html"
+        class="checkout-btn"
+    >
+        Proceed to Checkout
+    </a>
+
+</div>
+
+    </div>
+
+</main>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

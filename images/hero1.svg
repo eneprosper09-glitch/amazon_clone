@@ -1,0 +1,54 @@
+<svg viewBox="0 0 1500 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2A4A"/>
+      <stop offset="55%" stop-color="#123E63"/>
+      <stop offset="100%" stop-color="#1B5A7A"/>
+    </linearGradient>
+    <linearGradient id="tag1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF9F1C"/>
+      <stop offset="100%" stop-color="#FFC145"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1500" height="600" fill="url(#bg1)"/>
+  <circle cx="1180" cy="260" r="320" fill="url(#glow1)"/>
+
+  <!-- decorative arc lines -->
+  <path d="M -50 520 Q 400 420 900 500 T 1550 460" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2" fill="none"/>
+  <path d="M -50 560 Q 400 470 900 545 T 1550 505" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2" fill="none"/>
+
+  <!-- price tag badge -->
+  <g transform="translate(90,90)">
+    <path d="M0 30 L30 0 L150 0 Q170 0 170 20 L170 90 Q170 110 150 110 L30 110 Q10 110 0 90 Z" fill="url(#tag1)"/>
+    <circle cx="35" cy="30" r="9" fill="#0B2A4A"/>
+    <text x="95" y="70" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#0B2A4A" text-anchor="middle">-40%</text>
+  </g>
+
+  <text x="90" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-weight="700" fill="#FFFFFF">Big Deals Week</text>
+  <text x="90" y="360" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#CFE8F5">Thousands of savings across every category</text>
+
+  <g transform="translate(90,410)">
+    <rect width="220" height="64" rx="8" fill="url(#tag1)"/>
+    <text x="110" y="41" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0B2A4A" text-anchor="middle">Shop now</text>
+  </g>
+
+  <!-- simple product silhouettes (boxes / gift shapes) -->
+  <g transform="translate(950,300)">
+    <rect x="0" y="120" width="140" height="120" rx="6" fill="#FFC145" opacity="0.95"/>
+    <rect x="0" y="120" width="140" height="26" fill="#FF9F1C"/>
+    <rect x="60" y="120" width="20" height="120" fill="#FF9F1C"/>
+
+    <rect x="170" y="60" width="150" height="180" rx="6" fill="#E9F3FA" opacity="0.9"/>
+    <rect x="170" y="60" width="150" height="30" fill="#BEE0F2"/>
+    <rect x="235" y="60" width="20" height="180" fill="#BEE0F2"/>
+
+    <rect x="-140" y="80" width="120" height="160" rx="6" fill="#7EC8E3" opacity="0.85"/>
+    <rect x="-140" y="80" width="120" height="24" fill="#5AAFCB"/>
+    <rect x="-90" y="80" width="20" height="160" fill="#5AAFCB"/>
+  </g>
+</svg>

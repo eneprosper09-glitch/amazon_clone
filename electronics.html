@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Electronics | Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         HEADER
+    =============================== -->
+
+    <header class="navbar">
+
+
+        <!-- LOGO -->
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Clone Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- LOCATION -->
+
+        <a
+            href="delivery.html"
+            class="nav-location"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <small>
+                    Deliver to
+                </small>
+
+                <h5>
+                    Nigeria
+                </h5>
+
+            </div>
+
+        </a>
+
+
+        <!-- SEARCH -->
+
+        <div class="search">
+
+            <select id="searchCategory">
+
+                <option value="all">
+                    All
+                </option>
+
+                <option value="electronics">
+                    Electronics
+                </option>
+
+                <option value="fashion">
+                    Fashion
+                </option>
+
+                <option value="home">
+                    Home
+                </option>
+
+                <option value="gaming">
+                    Gaming
+                </option>
+
+            </select>
+
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+                autocomplete="off"
+            >
+
+
+            <button
+                type="button"
+                id="searchBtn"
+                aria-label="Search"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- LANGUAGE -->
+
+        <div class="language">
+
+            <img
+                src="images/flag.png"
+                alt="English"
+            >
+
+            <span>
+                EN
+            </span>
+
+        </div>
+
+
+        <!-- ACCOUNT -->
+
+        <a
+            href="account.html"
+            class="account"
+        >
+
+            <small>
+                Hello, Sign in
+            </small>
+
+            <h5>
+                Account &amp; Lists
+            </h5>
+
+        </a>
+
+
+        <!-- ORDERS -->
+
+        <a
+            href="orders.html"
+            class="returns"
+        >
+
+            <small>
+                Returns
+            </small>
+
+            <h5>
+                &amp; Orders
+            </h5>
+
+        </a>
+
+
+        <!-- WISHLIST -->
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+
+                Wishlist
+                (
+                <span id="wishlist-count">
+                    0
+                </span>
+                )
+
+            </h4>
+
+        </a>
+
+
+        <!-- CART -->
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+
+                Cart
+                (
+                <span id="cart-count">
+                    0
+                </span>
+                )
+
+            </h4>
+
+        </a>
+
+
+    </header>
+
+
+
+    <!-- ==============================
+         SECOND NAVIGATION
+    =============================== -->
+
+    <nav class="second-nav">
+
+        <ul>
+
+            <li>
+
+                <a href="categories.html">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                    All
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="deals.html">
+                    Today's Deals
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="customer-service.html">
+                    Customer Service
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="registry.html">
+                    Registry
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="gift-cards.html">
+                    Gift Cards
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="sell.html">
+                    Sell
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- ==============================
+         ELECTRONICS PAGE
+    =============================== -->
+
+    <main class="category-page">
+
+
+        <section class="category-hero">
+
+            <h1>
+                Electronics
+            </h1>
+
+            <p>
+                Discover useful electronics and
+                smart devices for everyday life.
+            </p>
+
+        </section>
+
+
+
+        <!-- ==============================
+             PRODUCTS
+        =============================== -->
+
+        <section class="category-products-page">
+
+
+            <!-- POWER BANK -->
+
+            <div
+                class="product-card"
+                data-name="Power Bank"
+                data-price="22999"
+                data-image="images/Powerbank.png"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="images/Powerbank.png"
+                        alt="Power Bank"
+                    >
+
+                </div>
+
+
+                <h2>
+                    Power Bank
+                </h2>
+
+
+                <p class="product-description">
+                    Portable power bank for keeping
+                    your devices charged while on the go.
+                </p>
+
+
+                <p class="price">
+                    ₦22,999
+                </p>
+
+
+                <div class="product-actions">
+
+
+                    <button
+                        type="button"
+                        class="wishlist-btn"
+                        aria-label="Add Power Bank to wishlist"
+                    >
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="add-cart-btn"
+                    >
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SAMSUNG S24 ULTRA -->
+
+            <div
+                class="product-card"
+                data-name="Samsung S24 Ultra"
+                data-price="1099999"
+                data-image="images/S24ultra.png"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="images/S24ultra.png"
+                        alt="Samsung S24 Ultra"
+                    >
+
+                </div>
+
+
+                <h2>
+                    Samsung S24 Ultra
+                </h2>
+
+
+                <p class="product-description">
+                    Premium smartphone with a
+                    powerful camera and modern features.
+                </p>
+
+
+                <p class="price">
+                    ₦1,099,999
+                </p>
+
+
+                <div class="product-actions">
+
+
+                    <button
+                        type="button"
+                        class="wishlist-btn"
+                        aria-label="Add Samsung S24 Ultra to wishlist"
+                    >
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="add-cart-btn"
+                    >
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- IWATCH -->
+
+            <div
+                class="product-card"
+                data-name="iWatch"
+                data-price="299999"
+                data-image="images/I watch.png"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="images/I watch.png"
+                        alt="iWatch"
+                    >
+
+                </div>
+
+
+                <h2>
+                    iWatch
+                </h2>
+
+
+                <p class="product-description">
+                    Smart watch for staying connected,
+                    tracking activities and managing
+                    everyday tasks.
+                </p>
+
+
+                <p class="price">
+                    ₦299,999
+                </p>
+
+
+                <div class="product-actions">
+
+
+                    <button
+                        type="button"
+                        class="wishlist-btn"
+                        aria-label="Add iWatch to wishlist"
+                    >
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="add-cart-btn"
+                    >
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer>
+
+
+        <div class="back">
+            Back to Top
+        </div>
+
+
+        <div class="footer-content">
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Get to Know Us
+                </h3>
+
+                <a href="#">
+                    Careers
+                </a>
+
+                <a href="#">
+                    About Amazon
+                </a>
+
+                <a href="#">
+                    Investor Relations
+                </a>
+
+                <a href="#">
+                    Devices
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Make Money with Us
+                </h3>
+
+                <a href="sell.html">
+                    Sell Products
+                </a>
+
+                <a href="#">
+                    Affiliate Program
+                </a>
+
+                <a href="#">
+                    Advertise
+                </a>
+
+                <a href="#">
+                    Self Publish
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Payment Products
+                </h3>
+
+                <a href="#">
+                    Business Card
+                </a>
+
+                <a href="#">
+                    Reload Balance
+                </a>
+
+                <a href="#">
+                    Currency Converter
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Let Us Help You
+                </h3>
+
+                <a href="account.html">
+                    Your Account
+                </a>
+
+                <a href="#">
+                    Shipping Rates
+                </a>
+
+                <a href="orders.html">
+                    Returns
+                </a>
+
+                <a href="customer-service.html">
+                    Help
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+
+            <p>
+                &copy; 2026 Amazon Clone.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

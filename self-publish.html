@@ -1,0 +1,495 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Self Publish | Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <div class="navbar">
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+        </div>
+
+
+        <a
+            href="delivery.html"
+            class="nav-location"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <small>Deliver to</small>
+
+                <h5>Nigeria</h5>
+
+            </div>
+
+        </a>
+
+
+        <div class="search">
+
+            <select>
+                <option>All</option>
+            </select>
+
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+            >
+
+
+            <button
+                type="button"
+                id="searchBtn"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="language">
+
+            <img
+                src="images/flag.png"
+                alt="English"
+            >
+
+            <span>EN</span>
+
+        </div>
+
+
+        <a
+            href="account.html"
+            class="account"
+        >
+
+            <small>Hello, Sign in</small>
+
+            <h5>Account &amp; Lists</h5>
+
+        </a>
+
+
+        <a
+            href="orders.html"
+            class="returns"
+        >
+
+            <small>Returns</small>
+
+            <h5>&amp; Orders</h5>
+
+        </a>
+
+
+        <a
+            href="wishlist.html"
+            class="wishlist-link"
+        >
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h4>
+                Wishlist
+                (<span id="wishlist-count">0</span>)
+            </h4>
+
+        </a>
+
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h4>
+                Cart
+                (<span id="cart-count">0</span>)
+            </h4>
+
+        </a>
+
+    </div>
+
+
+    <!-- SELF PUBLISH PAGE -->
+
+    <main class="self-publish-page">
+
+
+        <section class="self-publish-hero">
+
+            <h1>
+                Self Publish
+            </h1>
+
+            <p>
+                Share your books and creative work
+                with readers through our publishing
+                platform.
+            </p>
+
+        </section>
+
+
+        <section class="self-publish-grid">
+
+
+            <div class="self-publish-card">
+
+                <i class="fa-solid fa-pen-nib"></i>
+
+                <h2>
+                    Create Your Book
+                </h2>
+
+                <p>
+                    Prepare your manuscript and
+                    turn your ideas into a finished
+                    book.
+                </p>
+
+            </div>
+
+
+            <div class="self-publish-card">
+
+                <i class="fa-solid fa-upload"></i>
+
+                <h2>
+                    Upload Your Work
+                </h2>
+
+                <p>
+                    Submit your book information,
+                    cover and manuscript through
+                    the publishing process.
+                </p>
+
+            </div>
+
+
+            <div class="self-publish-card">
+
+                <i class="fa-solid fa-book"></i>
+
+                <h2>
+                    Reach Readers
+                </h2>
+
+                <p>
+                    Make your work available to
+                    readers who are looking for
+                    new books and ideas.
+                </p>
+
+            </div>
+
+
+            <div class="self-publish-card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h2>
+                    Track Your Work
+                </h2>
+
+                <p>
+                    Keep track of your published
+                    work and monitor its performance.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- PUBLISHING FORM -->
+
+        <section class="self-publish-form-box">
+
+            <h2>
+                Start Publishing
+            </h2>
+
+            <p>
+                Tell us about the book you would
+                like to publish.
+            </p>
+
+
+            <form id="selfPublishForm">
+
+
+                <label for="authorName">
+                    Author Name
+                </label>
+
+                <input
+                    type="text"
+                    id="authorName"
+                    required
+                >
+
+
+                <label for="authorEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="authorEmail"
+                    required
+                >
+
+
+                <label for="bookTitle">
+                    Book Title
+                </label>
+
+                <input
+                    type="text"
+                    id="bookTitle"
+                    required
+                >
+
+
+                <label for="bookType">
+                    Book Type
+                </label>
+
+                <select
+                    id="bookType"
+                    required
+                >
+
+                    <option value="">
+                        Select book type
+                    </option>
+
+                    <option value="Fiction">
+                        Fiction
+                    </option>
+
+                    <option value="Non-Fiction">
+                        Non-Fiction
+                    </option>
+
+                    <option value="Children">
+                        Children's Book
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <label for="bookDescription">
+                    Book Description
+                </label>
+
+                <textarea
+                    id="bookDescription"
+                    rows="5"
+                    required
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="self-publish-btn"
+                >
+                    Submit Book
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div
+            class="back"
+            onclick="window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });"
+        >
+            Back to Top
+        </div>
+
+
+        <div class="footer-content">
+
+
+            <div class="footer-column">
+
+                <h3>Get to Know Us</h3>
+
+                <a href="careers.html">
+                    Careers
+                </a>
+
+                <a href="about.html">
+                    About Amazon
+                </a>
+
+                <a href="investor-relations.html">
+                    Investor Relations
+                </a>
+
+                <a href="devices.html">
+                    Devices
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Make Money with Us</h3>
+
+                <a href="sell.html">
+                    Sell Products
+                </a>
+
+                <a href="affiliate.html">
+                    Affiliate Program
+                </a>
+
+                <a href="advertise.html">
+                    Advertise
+                </a>
+
+                <a href="self-publish.html">
+                    Self Publish
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Payment Products</h3>
+
+                <a href="business-card.html">
+                    Business Card
+                </a>
+
+                <a href="reload-balance.html">
+                    Reload Balance
+                </a>
+
+                <a href="currency-converter.html">
+                    Currency Converter
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Let Us Help You</h3>
+
+                <a href="account.html">
+                    Your Account
+                </a>
+
+                <a href="shipping.html">
+                    Shipping Rates
+                </a>
+
+                <a href="orders.html">
+                    Returns
+                </a>
+
+                <a href="customer-service.html">
+                    Help
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.jpg"
+                    alt="Amazon Logo"
+                >
+
+            </a>
+
+            <p>
+                &copy; 2026 Amazon Clone.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
