@@ -493,6 +493,74 @@ if (addToCartBtn && productDetails) {
 
 }
 /* ==========================================
+   BUY NOW
+========================================== */
+
+const buyNowBtn = document.getElementById("buyNow");
+
+if (buyNowBtn && productDetails) {
+
+    buyNowBtn.addEventListener("click", function () {
+
+        /* Get product information */
+
+        const product = {
+
+            name: productDetails.dataset.name,
+
+            price: Number(
+                productDetails.dataset.price
+            ),
+
+            image: productDetails.dataset.image,
+
+            quantity: 1
+
+        };
+
+
+        /* Check if product already exists */
+
+        const existingProduct = cart.find(function (item) {
+
+            return item.name === product.name;
+
+        });
+
+
+        /* Increase quantity */
+
+        if (existingProduct) {
+
+            existingProduct.quantity += 1;
+
+        }
+
+        /* Add new product */
+
+        else {
+
+            cart.push(product);
+
+        }
+
+
+        /* Save cart */
+
+        localStorage.setItem(
+            "cart",
+            JSON.stringify(cart)
+        );
+
+
+        /* Go to checkout */
+
+        window.location.href = "checkout.html";
+
+    });
+
+}
+/* ==========================================
    STEP 5 - CART QUANTITY CONTROLS
 ========================================== */
 
